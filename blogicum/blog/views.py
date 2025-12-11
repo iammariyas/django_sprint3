@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .models import Post, Category
 
+
 # Create your views here.
 def get_posts():
     return Post.objects.select_related(
@@ -42,4 +43,3 @@ def category_posts(request, category_slug):
         'post_list': posts
     }
     return render(request, template, context)
-    
