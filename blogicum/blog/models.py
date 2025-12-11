@@ -21,7 +21,7 @@ class Category(PublishedAndDateModel):
     )
 
     class Meta:
-        verbose_name = 'категория'
+        verbose_name = 'категорию'
         verbose_name_plural = 'Категории'
 
     def __str__(self):
@@ -71,7 +71,7 @@ class Post(PublishedAndDateModel):
     )
 
     class Meta:
-        verbose_name = 'публикация'
+        verbose_name = 'публикацию'
         verbose_name_plural = 'Публикации'
 
     def __str__(self):
